@@ -5,7 +5,7 @@ class Stack:
         self.limit = l
         
     def push(self,x):
-        if len(self.list) > self.limit - 1:
+        if len(self.list) >= self.limit:
             return ('stack is full')
         self.list.append(x)
         self.top += 1
