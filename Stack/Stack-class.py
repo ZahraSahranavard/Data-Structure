@@ -3,6 +3,7 @@ class Stack:
         self.list = []
         self.top = -1
         self.limit = l
+        
     def push(self,x):
         if len(self.list) >= self.limit - 1:
             return ('stack is full')
@@ -55,6 +56,7 @@ s1 = Stack(limit)
 for i in range(limit-1):
     value = input("Enter value to push: ")
     s1.push(value)
+    
 print(s1.list)
 print(f'Top: {s1.top}')
 print(f'Is the stack full? {s1.is_full()}')
