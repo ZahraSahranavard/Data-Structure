@@ -53,7 +53,7 @@ class Stack:
 limit = int(input("Enter stack limit: "))
 s1 = Stack(limit)
 
-for i in range(limit-1):
+for i in range(limit):
     value = input("Enter value to push: ")
     s1.push(value)
     
