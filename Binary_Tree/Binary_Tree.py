@@ -9,6 +9,7 @@ class BTree:
         self.root = None
 
 # ------------------------------------------- Methods -----------------------------------------------
+    
     def insert_left(self,d):
         if self.root is None:  # اگر رشه خالی بود:
             self.root = BNode(d)
@@ -223,7 +224,7 @@ class BTree:
         print(f"Number of leaves by BFS: {count}")
 
 
-    #  متدی به کلاس درخت باینری اضافه کنید که گره های درجه یک را بشمارد (به روش غیر بازگشتی)
+    #  سوال2: متدی به کلاس درخت باینری اضافه کنید که گره های درجه یک را بشمارد (به روش غیر بازگشتی)
     def count_first_degree(self):
         if self.root is None:
             return
@@ -241,8 +242,6 @@ class BTree:
         print(f"Number of leaves by BFS: {count}")
 
 # ----------------------------------------------------------------------------------------------------
-
-
 
 # Test
 bt = BTree()
