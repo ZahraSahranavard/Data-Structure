@@ -49,6 +49,14 @@ class Stack:
                 temp_list.append(item)
         while temp_list:
             self.push(temp_list.pop())
+            
+    def show(self):
+        if self.top == -1:
+            print('stack is empty')
+            return
+        print("Stack (Top to Bottom):")
+        for i in range(self.top,-1,-1):
+            print(self.list[i])
 
 
 limit = int(input("Enter stack limit: "))
@@ -58,15 +66,4 @@ for i in range(limit):
     value = input("Enter value to push: ")
     s1.push(value)
     
-print(s1.list)
-print(f'Top: {s1.top}')
-print(f'Is the stack full? {s1.is_full()}')
-print(f'Last stack value: {s1.peek()}')
-x = input("Enter the amount you are looking for: ")
-print(f'Is the desired value present in the stack? {s1.is_find(x)}')
-print(f'Is the stack empty? {s1.is_empty()}')
-print(f'Has the stack reached half its limit? {s1.is_mid()}')
-old_value = input("Enter the old value: ")
-new_value = input("Enter the new value:")
-s1.replace(old_value, new_value)
-print(f'List with new value: {s1.list}')
+s1.show()
