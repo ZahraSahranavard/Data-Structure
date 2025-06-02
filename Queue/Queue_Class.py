@@ -34,3 +34,15 @@ class Queue:
 
     def is_empty(self):
         return self.front > self.rear
+
+
+# Test
+q = Queue()
+q.enqueue(0)
+q.enqueue(40)
+q.enqueue(10)
+q.enqueue(24)
+q.enqueue(37)
+q.enqueue(100)
+q.dequeue()
+q.show()
