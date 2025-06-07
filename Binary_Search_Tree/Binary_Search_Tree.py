@@ -8,9 +8,7 @@ class Binary_Search_Tree:
     def __init__(self):
         self.root = None
         self.l = []
-
 # ------------------------------------------- Methods -----------------------------------------------
-
     #  اضافه کردن عنصر جدید در محل مناسب
     def add(self,x):
         if self.root is None:
