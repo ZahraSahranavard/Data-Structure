@@ -42,7 +42,6 @@ class Binary_Search_Tree:
         while c1.Lchild:
             c = c1
             c1 = c1.Lchild
-
         c.Lchild = c1.Rchild
         del c1
 
