@@ -197,7 +197,6 @@ class AVLTree:
                 return self.search_recursive(root.Rchild, x)
             return self.search_recursive(root.Lchild, x)
 
-
     def replace(self,x,y):
         self.replace_recursive(self.root,x,y)
     def replace_recursive(self,node,x,y):
@@ -209,7 +208,6 @@ class AVLTree:
             self.replace_recursive(node.Lchild,x,y)
         else:
             self.replace_recursive(node.Rchild,x,y)
-
 
     #  متن replce طبق قوانین درخت AVL:
     def safe_replace(self,x,y):
